@@ -34,7 +34,10 @@ import checkoutPageStyles, {
   checkoutPageMobileProgressStyles,
 } from '@/design-system/theme/checkoutPageStyles';
 import { colorTokens, radiusTokens, spacingTokens } from '@/design-system/theme/tokens';
-import WizardProgressBar from '@/shared/components/WizardProgressBar';
+import WizardProgressBar, {
+  type WizardProgressStep,
+  type WizardProgressStatus,
+} from '@/shared/components/WizardProgressBar';
 
 import { useCreateBooking } from '../api/useCreateBooking';
 import { useStageDocs } from '../api/useStageDocs';
@@ -172,13 +175,16 @@ const CheckoutPage = () => {
 
   const currentIndex = stepOrder.indexOf(currentStep);
 
-  const heroSteps = useMemo(
+  const heroSteps: WizardProgressStep[] = useMemo(
     () =>
       stepOrder.map((step, index) => ({
         id: step,
         label: stepLabels[step],
-        number: index + 1,
-        status: index < currentIndex ? 'completed' : index === currentIndex ? 'active' : 'upcoming',
+        status: (index < currentIndex
+          ? 'completed'
+          : index === currentIndex
+          ? 'active'
+          : 'upcoming') as WizardProgressStatus,
       })),
     [currentIndex],
   );
@@ -255,12 +261,17 @@ const CheckoutPage = () => {
 
   const handleSubmit = async () => {
     await createBooking.mutateAsync({
-      travelers: travelers.map((traveler) => ({
-        fullName: traveler.fullName,
-        dateOfBirth: traveler.dob,
-        passportNumber: traveler.passport,
-        isLead: traveler.isLead ?? false,
-      })),
+      travelers: travelers.map((traveler) => {
+        const trimmedName = traveler.fullName.trim();
+        const [firstName = 'Guest', ...rest] = trimmedName ? trimmedName.split(' ') : ['Guest'];
+        const lastName = rest.join(' ') || (traveler.isLead ? 'Lead Guest' : 'Traveler');
+
+        return {
+          firstName,
+          lastName,
+          nationality: 'Not specified',
+        };
+      }),
       contactPreferences: {
         email: contactDetails.email,
         phone: contactDetails.phone,
@@ -355,10 +366,10 @@ const CheckoutPage = () => {
                         : colorTokens.neutral.white,
                   }}
                 >
-                  {step.status === 'completed' ? '✓' : step.number}
+                  {step.status === 'completed' ? '✓' : index + 1}
                 </Box>
                 <Typography fontSize={13} fontWeight={step.status === 'upcoming' ? 500 : 600} color={step.status === 'upcoming' ? 'rgba(74,57,42,0.6)' : colorTokens.safari[700]}>
-                  {stepLabels[step.id]}
+                  {step.label}
                 </Typography>
               </Box>
               {index < heroSteps.length - 1 ? (

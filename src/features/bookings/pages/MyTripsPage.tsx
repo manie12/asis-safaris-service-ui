@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import AddRoundedIcon from '@mui/icons-material/AddRounded';
-import ArrowBackRoundedIcon from '@mui/icons-material/ArrowBackRounded';
+// import ArrowBackRoundedIcon from '@mui/icons-material/ArrowBackRounded';
 import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded';
 import CalendarMonthRoundedIcon from '@mui/icons-material/CalendarMonthRounded';
 import DownloadRoundedIcon from '@mui/icons-material/DownloadRounded';
@@ -21,8 +21,8 @@ import WarningAmberRoundedIcon from '@mui/icons-material/WarningAmberRounded';
 import CheckCircleRoundedIcon from '@mui/icons-material/CheckCircleRounded';
 import HourglassTopRoundedIcon from '@mui/icons-material/HourglassTopRounded';
 import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded';
-import FilterListRoundedIcon from '@mui/icons-material/FilterListRounded';
-import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
+// import FilterListRoundedIcon from '@mui/icons-material/FilterListRounded';
+// import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import PhoneRoundedIcon from '@mui/icons-material/PhoneRounded';
 import type { SvgIconComponent } from '@mui/icons-material';
 
@@ -556,9 +556,9 @@ const MyTripsPage = () => {
     navigate('preferences');
   };
 
-  const handleMobileBack = () => {
-    navigate(-1);
-  };
+  // const handleMobileBack = () => {
+  //   navigate(-1);
+  // };
 
   const wizardPaths = ['/preferences', '/destinations', '/dates-and-group', '/recommendations'];
 

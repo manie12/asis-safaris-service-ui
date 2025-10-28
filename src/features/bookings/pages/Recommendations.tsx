@@ -19,7 +19,7 @@ import EventAvailableRoundedIcon from '@mui/icons-material/EventAvailableRounded
 import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded';
 import ChatRoundedIcon from '@mui/icons-material/ChatRounded';
 import DownloadRoundedIcon from '@mui/icons-material/DownloadRounded';
-import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
+// import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 
 import recommendationsPageStyles from '@/design-system/theme/recommendationsPageStyles';
 import { colorTokens, spacingTokens, typographyTokens } from '@/design-system/theme/tokens';
@@ -352,33 +352,33 @@ const RecommendationsPage = () => {
     }, [filteredPackages, sortOption]);
 
     const packageCountLabel = `${sortedPackages.length} packages found`;
-    const totalSteps = wizardSteps.length;
-    const activeStepIndex = wizardSteps.findIndex((step) => step.status === 'active');
-    const completedSteps = wizardSteps.filter((step) => step.status === 'completed').length;
-    const currentStepNumber = activeStepIndex >= 0 ? activeStepIndex + 1 : Math.max(completedSteps, 1);
-    const progressFraction = `${currentStepNumber}/${totalSteps}`;
-    const progressSummaryLabel = `Step ${currentStepNumber} of ${totalSteps}`;
-    const mobileAvatarUrl = 'https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg';
+    // const totalSteps = wizardSteps.length;
+    // const activeStepIndex = wizardSteps.findIndex((step) => step.status === 'active');
+    // const completedSteps = wizardSteps.filter((step) => step.status === 'completed').length;
+    // const currentStepNumber = activeStepIndex >= 0 ? activeStepIndex + 1 : Math.max(completedSteps, 1);
+    // const progressFraction = `${currentStepNumber}/${totalSteps}`;
+    // const progressSummaryLabel = `Step ${currentStepNumber} of ${totalSteps}`;
+    // const mobileAvatarUrl = 'https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg';
     const summaryValueMap = useMemo(
         () => Object.fromEntries(summaryItems.map(({ id, value }) => [id, value])),
         [],
     );
-    const connectorVariant = (
-        current: WizardProgressStep,
-        next?: WizardProgressStep,
-    ): 'filled' | 'partial' | 'none' => {
-        if (current.status === 'completed') {
-            return 'filled';
-        }
+    // const connectorVariant = (
+    //     current: WizardProgressStep,
+    //     next?: WizardProgressStep,
+    // ): 'filled' | 'partial' | 'none' => {
+    //     if (current.status === 'completed') {
+    //         return 'filled';
+    //     }
 
-        if (current.status === 'active') {
-            return next?.status === 'upcoming' ? 'partial' : 'filled';
-        }
+    //     if (current.status === 'active') {
+    //         return next?.status === 'upcoming' ? 'partial' : 'filled';
+    //     }
 
-        return 'none';
-    };
+    //     return 'none';
+    // };
 
-    const hasSavedPackages = useMemo(() => Object.values(savedPackages).some(Boolean), [savedPackages]);
+    // const hasSavedPackages = useMemo(() => Object.values(savedPackages).some(Boolean), [savedPackages]);
 
     const renderRatingStars = (rating: number) =>
         Array.from({ length: 5 }).map((_, index) =>
@@ -489,7 +489,7 @@ const RecommendationsPage = () => {
                             Key Highlights
                         </Typography>
                         <Box sx={recommendationsPageStyles.mobilePackageHighlights}>
-                            {pkg.highlights.slice(0, 4).map((highlight, index) => (
+                            {pkg.highlights.slice(0, 4).map((highlight) => (
                                 <Box key={`mobile-highlight-${pkg.id}-${highlight}`} sx={recommendationsPageStyles.mobilePackageHighlight}>
                                     <CheckRoundedIcon sx={{ fontSize: 14, color: '#22c55e' }} />
                                     <Typography component="span" fontSize={12} color="rgba(74,57,42,0.75)">

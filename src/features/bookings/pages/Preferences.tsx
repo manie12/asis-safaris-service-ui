@@ -35,16 +35,16 @@ import { colorTokens, spacingTokens, typographyTokens } from '@/design-system/th
 import WizardHeroSection, { type WizardHeroHighlight } from '@/shared/components/WizardHeroSection';
 import WizardProgressBar, { type WizardProgressStep } from '@/shared/components/WizardProgressBar';
 import TravelExploreRoundedIcon from '@mui/icons-material/TravelExploreRounded';
-import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
+// import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import SettingsRoundedIcon from '@mui/icons-material/SettingsRounded';
 import MapRoundedIcon from '@mui/icons-material/MapRounded';
 import MonetizationOnRoundedIcon from '@mui/icons-material/MonetizationOnRounded';
-import LocationOnRoundedIcon from '@mui/icons-material/LocationOnRounded';
+// import LocationOnRoundedIcon from '@mui/icons-material/LocationOnRounded';
 import BalanceRoundedIcon from '@mui/icons-material/BalanceRounded';
 import CompassCalibrationRoundedIcon from '@mui/icons-material/CompassCalibrationRounded';
 import WorkRoundedIcon from '@mui/icons-material/WorkRounded';
-import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
-import PersonRoundedIcon from '@mui/icons-material/PersonRounded';
+// import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
+// import PersonRoundedIcon from '@mui/icons-material/PersonRounded';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 
 const heroHighlights: WizardHeroHighlight[] = [
@@ -361,18 +361,24 @@ const mobilePopularDestinations = [
         title: 'Serengeti',
         price: 'From $1,800',
         image: 'https://storage.googleapis.com/uxpilot-auth.appspot.com/f47f1d367b-1cf6fb91cac686aa4e26.png',
+        badge: '',
+
     },
     {
         id: 'ngorongoro',
         title: 'Ngorongoro',
         price: 'From $950',
         image: 'https://storage.googleapis.com/uxpilot-auth.appspot.com/5ee893a328-dc9dba8e4457497e3344.png',
+        badge: '',
+
     },
     {
         id: 'amboseli',
         title: 'Amboseli',
         price: 'From $750',
         image: 'https://storage.googleapis.com/uxpilot-auth.appspot.com/cb12741339-5630b63ee7d859767ddb.png',
+        badge: '',
+
     },
 ] as const;
 
@@ -417,6 +423,8 @@ const mobileQuickActions = [
         icon: CompassCalibrationRoundedIcon,
         gradient: `linear-gradient(135deg, ${colorTokens.safari[500]} 0%, ${colorTokens.safari[600]} 100%)`,
         textColor: colorTokens.neutral.white,
+        border: 'none',
+
     },
     {
         id: 'my-trips',
@@ -428,13 +436,13 @@ const mobileQuickActions = [
     },
 ] as const;
 
-const mobileBottomNav = [
-    { id: 'home', label: 'Home', icon: HomeRoundedIcon, active: true },
-    { id: 'explore', label: 'Explore', icon: SearchRoundedIcon },
-    { id: 'saved', label: 'Saved', icon: FavoriteRoundedIcon },
-    { id: 'trips', label: 'Trips', icon: WorkRoundedIcon },
-    { id: 'profile', label: 'Profile', icon: PersonRoundedIcon },
-] as const;
+// const mobileBottomNav = [
+//     { id: 'home', label: 'Home', icon: HomeRoundedIcon, active: true },
+//     { id: 'explore', label: 'Explore', icon: SearchRoundedIcon },
+//     { id: 'saved', label: 'Saved', icon: FavoriteRoundedIcon },
+//     { id: 'trips', label: 'Trips', icon: WorkRoundedIcon },
+//     { id: 'profile', label: 'Profile', icon: PersonRoundedIcon },
+// ] as const;
 
 const testimonialCards = [
     {

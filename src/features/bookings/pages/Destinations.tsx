@@ -16,9 +16,9 @@ import ArrowBackRoundedIcon from '@mui/icons-material/ArrowBackRounded';
 import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded';
 import CheckCircleRoundedIcon from '@mui/icons-material/CheckCircleRounded';
 import CancelRoundedIcon from '@mui/icons-material/CancelRounded';
-import FavoriteRoundedIcon from '@mui/icons-material/FavoriteRounded';
-import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
-import TravelExploreRoundedIcon from '@mui/icons-material/TravelExploreRounded';
+// import FavoriteRoundedIcon from '@mui/icons-material/FavoriteRounded';
+// import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
+// import TravelExploreRoundedIcon from '@mui/icons-material/TravelExploreRounded';
 import type { SvgIconComponent } from '@mui/icons-material';
 
 import destinationsPageStyles from '@/design-system/theme/destinationsPageStyles';
@@ -318,23 +318,23 @@ const DestinationsPage = () => {
     const navigate = useNavigate();
 
     const selectedCount = 0;
-    const activeIndex = wizardSteps.findIndex((step) => step.status === 'active');
-    const resolvedActiveIndex = activeIndex === -1 ? 0 : activeIndex;
-    const currentStepNumber = wizardSteps[resolvedActiveIndex]?.id ?? wizardSteps[wizardSteps.length - 1]?.id ?? 1;
-    const progressPercent = Math.round(((resolvedActiveIndex + 1) / wizardSteps.length) * 100);
-    const mobileAvatarUrl = 'https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg';
+    // const activeIndex = wizardSteps.findIndex((step) => step.status === 'active');
+    // const resolvedActiveIndex = activeIndex === -1 ? 0 : activeIndex;
+    // const currentStepNumber = wizardSteps[resolvedActiveIndex]?.id ?? wizardSteps[wizardSteps.length - 1]?.id ?? 1;
+    // const progressPercent = Math.round(((resolvedActiveIndex + 1) / wizardSteps.length) * 100);
+    // const mobileAvatarUrl = 'https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg';
 
-    const getMobileProgressNodeStyles = (status: WizardProgressStatus) => {
-        if (status === 'completed') {
-            return destinationsPageStyles.mobileProgressNodeCompleted;
-        }
+    // const getMobileProgressNodeStyles = (status: WizardProgressStatus) => {
+    //     if (status === 'completed') {
+    //         return destinationsPageStyles.mobileProgressNodeCompleted;
+    //     }
 
-        if (status === 'active') {
-            return destinationsPageStyles.mobileProgressNodeActive;
-        }
+    //     if (status === 'active') {
+    //         return destinationsPageStyles.mobileProgressNodeActive;
+    //     }
 
-        return destinationsPageStyles.mobileProgressNodeUpcoming;
-    };
+    //     return destinationsPageStyles.mobileProgressNodeUpcoming;
+    // };
 
     return (
         <>

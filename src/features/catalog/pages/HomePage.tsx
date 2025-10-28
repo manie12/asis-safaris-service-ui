@@ -10,37 +10,37 @@ import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined
 import DiamondOutlinedIcon from '@mui/icons-material/DiamondOutlined';
 import BalanceOutlinedIcon from '@mui/icons-material/BalanceOutlined';
 
-import DenseListingGrid from '@/shared/components/DenseListingGrid/DenseListingGrid';
-import FAQAccordion from '@/shared/components/FAQAccordion';
-import FiltersBar from '@/shared/components/FiltersBar';
-import Hero from '@/shared/components/Hero';
-import MapSection from '@/shared/components/MapSection';
+// import DenseListingGrid from '@/shared/components/DenseListingGrid/DenseListingGrid';
+// import FAQAccordion from '@/shared/components/FAQAccordion';
+// import FiltersBar from '@/shared/components/FiltersBar';
+// import Hero from '@/shared/components/Hero';
+// import MapSection from '@/shared/components/MapSection';
 import WhatsAppSticky from '@/shared/components/WhatsAppSticky';
-import EmptyState from '@/shared/components/EmptyState';
-import { useTours } from '../api/useTours';
+// import EmptyState from '@/shared/components/EmptyState';
+// import { useTours } from '../api/useTours';
 import { homePageStyles } from '@/design-system/theme/homePageStyles';
 import { colorTokens } from '@/design-system/theme/tokens';
 
-const fallbackTours = [
-  {
-    id: '1',
-    title: 'Mara sunrise balloon safari',
-    heroImage: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee',
-    priceFrom: 4200,
-    currency: 'USD' as const,
-    durationDays: 5,
-    countryCode: 'KE',
-  },
-  {
-    id: '2',
-    title: 'Amboseli elephant watch',
-    heroImage: 'https://images.unsplash.com/photo-1549880338-65ddcdfd017b',
-    priceFrom: 2800,
-    currency: 'USD' as const,
-    durationDays: 4,
-    countryCode: 'KE',
-  },
-];
+// const fallbackTours = [
+//   {
+//     id: '1',
+//     title: 'Mara sunrise balloon safari',
+//     heroImage: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee',
+//     priceFrom: 4200,
+//     currency: 'USD' as const,
+//     durationDays: 5,
+//     countryCode: 'KE',
+//   },
+//   {
+//     id: '2',
+//     title: 'Amboseli elephant watch',
+//     heroImage: 'https://images.unsplash.com/photo-1549880338-65ddcdfd017b',
+//     priceFrom: 2800,
+//     currency: 'USD' as const,
+//     durationDays: 4,
+//     countryCode: 'KE',
+//   },
+// ];
 
 const preferenceHighlights = [
   {
@@ -82,18 +82,24 @@ const popularDestinations = [
     name: 'Serengeti',
     price: 'From $1,800',
     image: 'https://storage.googleapis.com/uxpilot-auth.appspot.com/f47f1d367b-8c035831dd988b642cfb.png',
+    tag: '',
+
   },
   {
     id: 'ngorongoro',
     name: 'Ngorongoro',
     price: 'From $950',
     image: 'https://storage.googleapis.com/uxpilot-auth.appspot.com/5ee893a328-d4f7ac74d336fb86ca8f.png',
+    tag: '',
+
   },
   {
     id: 'amboseli',
     name: 'Amboseli',
     price: 'From $750',
     image: 'https://storage.googleapis.com/uxpilot-auth.appspot.com/cb12741339-074e09fcd82e2265fe3b.png',
+    tag: '',
+
   },
 ] as const;
 
@@ -101,6 +107,7 @@ const luxurySafaris = [
   {
     id: 'maasai-luxury',
     name: 'Maasai Mara Luxury Lodge',
+        duration: '',
     price: '$3,200',
     image: 'https://storage.googleapis.com/uxpilot-auth.appspot.com/220ab76677-f23fd3f10083a2f3f3c2.png',
     tag: 'Luxury',
@@ -159,8 +166,8 @@ const midRangeSafaris = [
 ] as const;
 
 const HomePage = () => {
-  const { data, isLoading } = useTours();
-  const tours = data?.data ?? fallbackTours;
+  // const { data, isLoading } = useTours();
+  // const tours = data?.data ?? fallbackTours;
 
   return (
     <Stack spacing={{ xs: 6, md: 8 }} sx={homePageStyles.container}>

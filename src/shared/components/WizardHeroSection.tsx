@@ -1,14 +1,14 @@
 import type { ElementType, ReactNode } from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import type { SvgIconComponent, SvgIconProps } from '@mui/icons-material';
+import type { SvgIconComponent } from '@mui/icons-material';
 import type { SxProps, Theme } from '@mui/material/styles';
 
 export type WizardHeroHighlight = {
   id: string;
   label: ReactNode;
   icon: SvgIconComponent;
-  iconProps?: SvgIconProps;
+  iconProps?: Record<string, unknown>;
 };
 
 export type WizardHeroStyles = {

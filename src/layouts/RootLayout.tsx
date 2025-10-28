@@ -20,13 +20,13 @@ import FavoriteRoundedIcon from '@mui/icons-material/FavoriteRounded';
 import TuneRoundedIcon from '@mui/icons-material/TuneRounded';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
-import TravelExploreRoundedIcon from '@mui/icons-material/TravelExploreRounded';
+// import TravelExploreRoundedIcon from '@mui/icons-material/TravelExploreRounded';
 import ChevronRightRoundedIcon from '@mui/icons-material/ChevronRightRounded';
 import { useTranslation } from 'react-i18next';
 import { topBarStyles } from '@/design-system/theme/topBarStyles';
 import { rootSidebarStyles } from '@/design-system/theme/rootSidebarStyles';
 import { colorTokens } from '@/design-system/theme/tokens';
-import { BorderAll } from '@mui/icons-material';
+// import { BorderAll } from '@mui/icons-material';
 
 interface RootLayoutProps {
   children: ReactNode;

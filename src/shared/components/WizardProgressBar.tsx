@@ -47,6 +47,10 @@ type WizardProgressBarProps = {
 const defaultConnectorVariant = (step: WizardProgressStep): ConnectorVariant =>
   step.status === 'completed' || step.status === 'active' ? 'filled' : 'none';
 
+const mergeSx = (
+  ...values: Array<SxProps<Theme> | undefined>
+): SxProps<Theme> => values.filter(Boolean) as SxProps<Theme>;
+
 const WizardProgressBar = ({
   id,
   steps,
@@ -80,10 +84,10 @@ const WizardProgressBar = ({
             : 'none';
 
         return (
-          <Box key={step.id} sx={styles.stepWrapper}>
-            <Box sx={styles.step}>
-              <Box sx={{ ...styles.node, ...variantNodeSx }}>{nodeContent}</Box>
-              <Typography component="span" sx={{ ...styles.label, ...variantLabelSx }}>
+          <Box key={step.id} sx={mergeSx(styles.stepWrapper)}>
+            <Box sx={mergeSx(styles.step)}>
+              <Box sx={mergeSx(styles.node, variantNodeSx)}>{nodeContent}</Box>
+              <Typography component="span" sx={mergeSx(styles.label, variantLabelSx)}>
                 {step.label}
               </Typography>
             </Box>
