@@ -1,0 +1,13 @@
+{
+  "hero": {
+    "headline": "Tailored African safaris",
+    "subheadline": "Discover curated adventures across Kenya, Tanzania and beyond."
+  },
+  "nav": {
+    "home": "Home",
+    "search": "Search",
+    "bookings": "My Trips",
+    "inbox": "Inbox",
+    "account": "Account"
+  }
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 160 40">
+  <title>Asis Safaris</title>
+  <rect width="160" height="40" rx="8" fill="#f8f4f2" />
+  <text
+    x="80"
+    y="24"
+    font-family="Playfair Display, serif"
+    font-size="20"
+    text-anchor="middle"
+    fill="#472a28"
+  >
+    Asis Safaris
+  </text>
+</svg>

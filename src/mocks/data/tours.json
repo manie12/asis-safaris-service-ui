@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "title": "Mara sunrise balloon safari",
+    "countryCode": "KE",
+    "priceFrom": 4200,
+    "currency": "USD",
+    "heroImage": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+    "durationDays": 5,
+    "description": "Float over the Mara as the sun breaks over the plains.",
+    "highlights": ["Sunrise balloon ride", "Private bush breakfast", "Guided game drives"],
+    "gallery": [
+      "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1",
+      "https://images.unsplash.com/photo-1489515217757-5fd1be406fef"
+    ],
+    "itinerary": [
+      { "day": 1, "title": "Arrival", "description": "Meet your guide in Nairobi and fly to Mara." },
+      { "day": 2, "title": "Balloon safari", "description": "Balloon ride at sunrise followed by game drive." }
+    ],
+    "inclusions": ["Luxury camp", "All meals", "Park fees"],
+    "exclusions": ["International flights"]
+  }
+]

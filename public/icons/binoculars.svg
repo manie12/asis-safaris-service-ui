@@ -1,0 +1,9 @@
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Binoculars icon">
+  <defs>
+    <linearGradient id="binoculars-fill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ee5c28" />
+      <stop offset="100%" stop-color="#73261c" />
+    </linearGradient>
+  </defs>
+  <path fill="url(#binoculars-fill)" d="M12 6h4a3 3 0 0 1 3 3v7H9V9a3 3 0 0 1 3-3zm21 0h3a3 3 0 0 1 3 3v7h-10V9a3 3 0 0 1 3-3zm-3 10v20a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V16h12zm-18 0v20a4 4 0 0 0 4 4H9a4 4 0 0 1-4-4v-7.5c0-4.08 1.1-8.06 3.2-11.56.34-.57.8-1.31 1.26-1.94H12zm28 0c.46.63.92 1.37 1.26 1.94 2.1 3.5 3.2 7.48 3.2 11.56V36a4 4 0 0 1-4 4h-6a4 4 0 0 0 4-4V16h1.54z"/>
+</svg>

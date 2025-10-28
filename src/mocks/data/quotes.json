@@ -1,0 +1,11 @@
+{
+  "default": {
+    "currency": "USD",
+    "total": 4800,
+    "lineItems": [
+      { "label": "Accommodations", "amount": 3200 },
+      { "label": "Conservation fees", "amount": 800 },
+      { "label": "Guiding & logistics", "amount": 800 }
+    ]
+  }
+}

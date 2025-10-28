@@ -1,0 +1,6 @@
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Calendar icon">
+  <rect x="6" y="10" width="36" height="30" rx="6" fill="#ffffff" stroke="#d4c8ba" stroke-width="2" />
+  <path d="M12 6h4v6h-4V6zm20 0h4v6h-4V6z" fill="#8b6f56" />
+  <rect x="6" y="18" width="36" height="4" fill="#fdeadb" />
+  <rect x="16" y="26" width="8" height="8" rx="2" fill="#ee5c28" opacity="0.85" />
+</svg>

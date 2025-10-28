@@ -1,0 +1,9 @@
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Heart icon">
+  <defs>
+    <linearGradient id="heart-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f7ab7d" />
+      <stop offset="100%" stop-color="#ae311b" />
+    </linearGradient>
+  </defs>
+  <path fill="url(#heart-gradient)" d="M24 41c-.9 0-1.8-.32-2.5-.95l-13-11.6C4.1 25.5 2 21.6 2 17.3 2 10.6 7.2 5 13.8 5c3.7 0 7.1 1.7 9.2 4.5C25.1 6.7 28.5 5 32.2 5 38.8 5 44 10.6 44 17.3c0 4.3-2.1 8.2-6.5 11.1l-13 11.6c-.7.63-1.6.95-2.5.95z" />
+</svg>

@@ -1,0 +1,13 @@
+{
+  "hero": {
+    "headline": "Safaris africains sur mesure",
+    "subheadline": "Découvrez des aventures sélectionnées au Kenya, en Tanzanie et au-delà."
+  },
+  "nav": {
+    "home": "Accueil",
+    "search": "Rechercher",
+    "bookings": "Mes voyages",
+    "inbox": "Messages",
+    "account": "Compte"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "1": [
+    { "date": "2025-02-11", "available": true, "seatsRemaining": 6 },
+    { "date": "2025-02-12", "available": false, "seatsRemaining": 0 },
+    { "date": "2025-02-13", "available": true, "seatsRemaining": 4 }
+  ]
+}
