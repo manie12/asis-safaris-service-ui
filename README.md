@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Asis Safaris UI Service
 
 Modern travel marketplace front-end for the Asis Safaris ecosystem. Built with React + Vite + TypeScript, themed with a shared design system that bridges MUI and Ant Design, and wired for data fetching via Axios, React Query, and mock APIs powered by MSW.
@@ -45,3 +46,7 @@ src/
 - Hook the API layer to the real `asis-safari-service`
 - Extend MSW fixtures as the contract evolves
 - Layer in unit/E2E coverage once endpoints stabilise
+=======
+# asis-safaris-service-ui
+asis-safaris-service-ui
+>>>>>>> 2668fdcc7c1142ac725e697a1c3cd5304bc2c349
